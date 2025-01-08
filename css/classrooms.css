@@ -1,0 +1,147 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.header {
+    background-color: white;
+    color:black;
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* Main Container */
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image Container */
+.elements {
+    width: 300px;
+    padding: 10px;
+}
+
+.image {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.644);
+}
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.404);
+}
+
+/* Information Section */
+.information {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.information h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:  hsl(24, 100%, 50%);
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+.info-section h4 {
+    font-size: 1.5rem;
+    color: hsl(24, 100%, 50%);
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: hsl(24, 100%, 50%);
+    color: #fff;
+    margin-top: 50px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .main {
+        padding: 10px;
+    }
+    .elements {
+        width: 250px;
+    }
+    .information {
+        padding: 15px;
+    }
+    .information h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .elements {
+        width: 100%;
+    }
+
+    .information h2 {
+        font-size: 1.5rem;
+    }
+
+    .information {
+        padding: 10px;
+    }
+    
+    .info-section h4 {
+        font-size: 1.3rem;
+    }
+    
+    .footer p {
+        font-size: 0.8rem;
+    }
+}

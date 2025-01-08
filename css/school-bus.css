@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Navigation */
+.navbar-school-bus {
+    background-color: hsl(24, 100%, 50%);
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-school-bus h2 {
+    margin: 0;
+}
+
+.navbar-school-bus ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-school-bus a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-school-bus {
+    background: url('image/bus-hero.jpg') no-repeat center center/cover;
+    color:black;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-school-bus h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-school-bus p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.cta-button {
+    background-color: hsl(30, 100%, 50%);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: hsl(30, 100%, 40%);
+}
+
+/* Main Container */
+.main-school-bus {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image Container */
+.image-school-bus {
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.image-school-bus:hover {
+    transform: scale(1.05);
+}
+
+/* Information Section */
+.information-school-bus {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.information-school-bus h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: hsl(24, 100%, 50%);
+}
+
+/* Features Grid */
+.features-grid-school-bus {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-school-bus {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-school-bus h4 {
+    color: hsl(24, 100%, 50%);
+}
+
+/* Map Section */
+.map-container-school-bus {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.map-container-school-bus h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: hsl(24, 100%, 50%);
+}
+
+/* Contact Section */
+.contact-school-bus {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-school-bus h2 {
+    font-size: 2rem;
+    color: hsl(24, 100%, 50%);
+}
+
+/* Footer Section */
+.footer-school-bus {
+    text-align: center;
+    padding: 20px;
+    background-color: hsl(24, 100%, 50%);
+    color: #fff;
+    margin-top: 50px;
+}
+
+.footer-school-bus p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-school-bus ul {
+        flex-direction: column;
+    }
+
+    .hero-school-bus h1 {
+        font-size: 2rem;
+    }
+
+    .features-grid-school-bus {
+        grid-template-columns: 1fr;
+    }
+}

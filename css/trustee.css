@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Showcase Area */
+.showcase-area {
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(rgba(166, 121, 75, -0.395), rgba(241, 194, 51, 0.748)), url("sarhad.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.showcase-container {
+  font-size: 2.7rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  animation: slideUp 1s ease-in-out;
+}
+
+/* Content Area */
+.content {
+  background: url("White\ Minimalist\ Simple\ Elegant\ Quote\ Instagram\ Post.png");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px 150px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.content div {
+  max-width: 43%;
+}
+
+.content-text {
+  padding: 30px;
+  margin: 40px 0;
+}
+
+.content-text h4 {
+  color: navy;
+  font-size: 2.125rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.content-text p {
+  font-size: 1.1rem;
+  word-spacing: 2px;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.trustee {
+  padding: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 2s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.trustee img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 15px 10px 20px orange;
+  width: 350px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/* Footer Area */
+.footer-container {
+  background: #f2f2f2;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-section p {
+  font-size: 20px;
+  color: #666;
+}
+
+.footer-section ul {
+  font-size: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content {
+    padding: 40px;
+  }
+
+  .showcase-container {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content div {
+    max-width: 100%;
+  }
+
+  .showcase-container {
+    left: 20px;
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-area {
+    height: 300px;
+  }
+
+  .showcase-container {
+    font-size: 1.2rem;
+    left: 10px;
+    bottom: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .content-text h4 {
+    font-size: 1.5rem;
+  }
+
+  .content-text p {
+    font-size: 1rem;
+  }
+
+  .footer-section ul li a {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.7rem;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.icon img {
+  height: 30px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

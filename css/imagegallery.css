@@ -1,0 +1,265 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.banner {
+    position: relative;
+    /* background-image: url('images/background.jpg'); */
+    /* background-size: cover;
+    background-position: center; */
+    /* padding: 20px 20px; */
+    text-align: left;
+    color: white;
+    background-color: white;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 20px;
+    color: #f4f4f4;
+}
+
+.content {
+    padding: 50px;
+}
+
+.content h2 {
+    color: #800000;
+    border-bottom: 2px solid #800000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.gallery-item {
+    background-color: white;
+    width: 23%;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 80%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.gallery-item .description {
+    padding: 15px;
+    height: 20%;
+    width: 100%;
+}
+
+.gallery-item .description h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #800000;
+}
+
+.gallery-item .description p {
+    color: #666;
+    font-size: 14px;
+}
+
+.gallery-item .description .view-more {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #800000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.gallery-item .description .view-more:hover {
+    background-color: #a00000;
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+
+    .navbar a {
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+.contact-section {
+    background-color: #800000;
+    color: white;
+    padding: 20px;
+}
+
+.contact-card {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-card p {
+    margin: 10px 0;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup:target {
+    display: flex;
+}
+
+.popup-content {
+    position: relative; 
+    width: 60vw; /* Set width to 60% of viewport width */
+    height: 60vh; /* Set height to 60% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+}
+
+.popup-content img {
+    display: block;
+    width: 100%; /* Ensure image fills the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure it doesn't exceed the container height */
+    object-fit: contain; 
+}
+
+.close {
+    position: fixed;
+    top: 5%; 
+    right: 5%; 
+    font-size: 3vw; 
+    color: white;
+    text-decoration: none;
+    z-index: 1001;
+}
+
+.next,
+.prev {
+    position: fixed;
+    top: 50%; 
+    font-size: 3vw; 
+    color: white;
+    text-decoration: none;
+    z-index: 1001;
+    padding: 10px; 
+    border-radius: 50%;
+    transform: translateY(-50%); 
+}
+
+.next {
+    right: 5%; 
+}
+
+.prev {
+    left: 5%; 
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .close {
+        font-size: 4vw; 
+    }
+
+    .next,
+    .prev {
+        font-size: 2vw; 
+        padding: 8px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .close {
+        font-size: 5vw; 
+    }
+
+    .next,
+    .prev {
+        font-size: 5vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .close {
+        font-size: 6vw; 
+        top: 3%; 
+        right: 3%;
+    }
+
+    .next,
+    .prev {
+        font-size: 6vw; 
+        padding: 10px; 
+    }
+
+    .popup-content {
+        width: 60vw; /* Maintain 60% width for smaller screens */
+        height: 60vh; /* Maintain 60% height for smaller screens */
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-card {
+        min-width: 700px;
+    }
+}

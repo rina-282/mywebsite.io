@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Setting background for the body and centering the content */
+body {
+    background-image:url(images/background_image.jpg);
+    background-size: cover;
+    /* overflow-x: hidden; Prevent horizontal scroll */
+    /* padding: 20px; */
+    text-align: center; 
+}
+
+/* Main container to hold all sections */
+.container-pledge {
+    max-width: 1200px;
+    margin: auto; 
+    overflow: hidden; 
+}
+
+/* Styling for the header section */
+.header {
+    /* background-color: #000000; */
+    color: #050505;
+    padding: 20px; 
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.header h1 {
+    font-size: 62px;
+}
+
+/* Heading 1 styling */
+h1 {
+    font-size: 40px; 
+    font-family: 'Playfair Display'; 
+    /* text-shadow: 0 0 15px rgba(255, 102, 0, 0.7);  */
+    text-align: center;
+    margin-bottom: 20px;
+    /* padding-top: 50px; */
+}
+
+/* Styling each section with a curved, dynamic design */
+.section {
+    background: #fff; 
+    padding: 50px 20px; 
+    border-radius: 40px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 40px;
+    position: relative; 
+    animation: fadeInUp 1s ease-out forwards; /* Animation for scroll effect */
+    opacity: 0; /* Hidden initially */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+/* Animation for sections to fade in from the bottom */
+@keyframes fadeInUp {
+    from {
+        opacity: 0; /* Start invisible */
+        transform: translateY(50px); /* Move up from 50px below */
+    }
+    to {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* Position at normal height */
+    }
+}
+
+/* Styling for the text in sections */
+.text {
+    width: 60%; 
+    text-align: left;
+    padding: 0 20px; 
+}
+
+/* Styling for the images in sections */
+.image        {
+    width: 30%; 
+    transition: transform 0.4s ease-in-out; /* Smooth hover effect */
+}
+
+/* Scale image slightly on hover */
+.image:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+/* Glowing headings for emphasis */
+h2 {
+    font-size: 32px; 
+    color: #ff6600; 
+    font-family: 'Playfair Display', serif; 
+    text-shadow: 0 0 15px rgba(255, 102, 0, 0.7); 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.anthem-section h2 {
+    color: #d85c22; 
+}
+
+.anthem-text {
+    font-size: 20px;
+    color: #333; 
+    text-align: center;
+}
+
+
+.pledge-text {
+    font-size: 20px; 
+    color: #555;
+    text-align: center;
+}
+
+/* Style for text in the prayer section */
+.prayer-text {
+    font-size: 20px; 
+    color: #444; 
+    text-align:center ;
+}
+
+/* Alternate the order of image and text for odd sections (image on left, text on right) */
+.section:nth-child(odd) {
+    flex-direction: row-reverse; 
+}
+/* Decorative curve at the top of each section */
+.curve {
+    position: relative; 
+    z-index: 1; 
+}
+
+.footer {
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #000000; 
+    color: #d1cdcd; 
+    padding: 20px 0; 
+    text-align: center; 
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    margin-top: 40px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query for small screen devices (responsive design) */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 24px; 
+    }
+
+    .section {
+        flex-direction: column; 
+        padding: 30px 10px; 
+    }
+
+    .section:nth-child(odd) {
+        flex-direction: column; 
+    }
+
+    .image {
+        width: 80%;
+        margin-bottom: 20px; 
+    }
+
+    .text {
+        width: 100%; 
+    }
+
+    .anthem-text, .prayer-text {
+        font-size: 16px;
+    }
+
+    .pledge-text {
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .footer {
+            font-size: 12px; 
+            padding: 15px 0; 
+        }
+    }
+}
