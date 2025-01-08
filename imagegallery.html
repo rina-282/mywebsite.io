@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/imagegallery.css" />
+  
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <title>sarhad-school-cbse</title>
+  </head>
+
+<body>
+    <header id="nav-menu" aria-label="navigation bar">
+        <div class="header-top">
+          <div class="logo-container">
+            <img src="images/updated-logo.png" alt="School Logo" class="school-logo">
+            <div class="school-info">
+              <h1 class="class-h1">SARHAD CBSE SCHOOL</h1>
+              <h6 class="class-h6">PUNE | A CBSE AFFILIATED SCHOOL</h6>
+              <h6 class="class-h6">AFFILIATION NO. XXXXX</h6>
+            </div>
+          </div>
+          <div class="button-group">
+            <a href="path/to/mandatory-public-disclosure.pdf" class="header-button" target="_blank"
+              onclick="printPage()">Mandatory Public Disclosure</a>
+            <a href="path/to/schools-brochure.pdf" target="_blank" class="header-button">School Brochure</a>
+            <a href="#login-signup" class="header-button">Login/Signup</a>
+          </div>
+        </div>
+        <div class="container">
+          <div class="nav-start">
+            <nav class="menu">
+              <ul class="menu-bar">
+                <li>
+                  <button class="nav-link dropdown-btn" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false"
+                    aria-label="browse">Home<i class="bx bx-chevron-down" aria-hidden="true"></i></button>
+                  <div id="dropdown1" class="dropdown">
+                    <ul role="menu">
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#best-of-the-day">
+                          <img src="./assets/icons/botd.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Our Toppers</span>
+                            <p>The nation builders</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#featured-streams">
+                          <img src="./assets/icons/fs.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Activities</span>
+                            <p>It brings the best in our students</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem">
+                        <a class="dropdown-link" href="#subscriptions">
+                          <img src="./assets/icons/sp.svg" class="icon" />
+                          <div>
+                            <span class="dropdown-link-title">Testimonials</span>
+                            <p>What are students say about us?</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li role="menuitem"></li>
+                      <a class="dropdown-link" href="index.html">
+                        <img src="./assets/icons/fs.svg" class="icon" />
+                        <div>
+                          <span class="dropdown-link-title">Home</span>
+                          <p>Return Back to Home</p>
+                        </div>
+                      </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#creative-feed">
+                    <img src="./assets/icons/cf.svg" class="icon" />
+                    <div>
+                      <span class="dropdown-link-title">Student Login</span>
+                      <p>Download your leaving certificates</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+    
+              <ul role="menu">
+                <li class="dropdown-title">
+                  <span class="dropdown-link-title">Follow Us On Social Media</span>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#adobe-xd">
+                    <img src="images/instagram.png" height="25px" width="25px" />
+                    Instagram
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#after-effect">
+                    <img src="images/facebook.png" height="25px" width="25px" />
+                    Facebook
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#sketch">
+                    <img src="images/gmail.png" height="25px" width="25px" />
+                    Gmail
+                  </a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#sketch">
+                    <img src="images/twitter.png" height="25px" width="25px" />
+                    Twitter
+                  </a>
+                </li>
+                <li role="menuitem"></li>
+                <a class="dropdown-link" href="#sketch">
+                  <img src="images/whatsapp.png" height="25px" width="25px" />
+                  Whatsapp
+                </a>
+                </li>
+                <li role="menuitem"></li>
+                <a class="dropdown-link" href="#sketch">
+                  <img src="images/linkedin.png" height="25px" width="25px" />
+                  LinkedIn
+                </a>
+                </li>
+              </ul>
+          </div>
+          </li>
+          <li>
+            <button class="nav-link dropdown-btn" data-dropdown="dropdown2" aria-haspopup="true" aria-expanded="false"
+              aria-label="discover">
+              About Us
+              <i class="bx bx-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div id="dropdown2" class="dropdown">
+              <ul role="menu">
+                <li>
+                  <span class="dropdown-link-title">Authorities Message</span>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="principal.html">Principal's Message</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="trustee.html">Founder's Message</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="secretary.html">Secratary's Message</a>
+                </li>
+              </ul>
+              <ul role="menu">
+                <li>
+                  <span class="dropdown-link-title">Institute Introduction</span>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="history-vision-and-mission.html">History, Vision & Mission</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#linux">School Management Committee</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#linux">Sexual Harassment Committee</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#linux">PTA Executive Committee Members</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="sisterinstitute.html">Sister Institutes</a>
+                </li>
+                <li role="menuitem"></li>
+                <a class="dropdown-link" href="pledge.html">Pledge & Prayers</a>
+              </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#linux">Alumni</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+    
+          <li>
+            <button class="nav-link dropdown-btn" data-dropdown="dropdown3" aria-haspopup="true" aria-expanded="false"
+              aria-label="discover">
+              Admissions
+              <i class="bx bx-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div id="dropdown3" class="dropdown">
+              <ul role="menu">
+                <li>
+                  <span class="dropdown-link-title">Know Us More</span>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#branding">Health Guildlines</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#illustrations">Why Sarhad</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#branding">Discover Sarhad</a>
+                </li>
+                <li role="menuitem"></li>
+                <a class="dropdown-link" href="rules-and-regulations.html">Rules & Regulations</a>
+          </li>
+          </ul>
+          <ul role="menu">
+            <li>
+              <span class="dropdown-link-title">Parent's Section</span>
+            </li>
+            <li role="menuitem">
+              <a class="dropdown-link" href="#mac-windows">Instruction to Parents</a>
+            </li>
+    
+          </ul>
+        </div>
+        </li>
+    
+        <li>
+          <button class="nav-link dropdown-btn" data-dropdown="dropdown4" aria-haspopup="true" aria-expanded="false"
+            aria-label="discover">
+            Facilities
+            <i class="bx bx-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div id="dropdown4" class="dropdown">
+            <ul role="menu">
+              <li>
+                <span class="dropdown-link-title">Our Amenities</span>
+              </li>
+              <li role="menuitem">
+                <a class="dropdown-link" href="classrooms.html">Classrooms</a>
+              </li>
+              <li role="menuitem">
+                <a class="dropdown-link" href="#branding">Library</a>
+              </li>
+              <li role="menuitem">
+                <a class="dropdown-link" href="computer-lab.html">Computer Lab</a>
+              </li>
+              <li role="menuitem">
+                <a class="dropdown-link" href="#branding">Sports</a>
+              </li>
+    
+              <ul role="menu">
+                <li>
+                  <span class="dropdown-link-title">Other Amenities</span>
+                </li>
+                
+                <li role="menuitem">
+                  <a class="dropdown-link" href="school-bus.html">School Bus</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#mac-windows">Art & Music</a>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#mac-windows">Co-curricular Activities</a>
+                </li>
+    
+              </ul>
+          </div>
+        </li>
+    
+        <li>
+          <button class="nav-link dropdown-btn" data-dropdown="dropdown5" aria-haspopup="true" aria-expanded="false"
+            aria-label="discover">
+            Academics
+            <i class="bx bx-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div id="dropdown5" class="dropdown">
+            <ul role="menu">
+              <li>
+                <span class="dropdown-link-title">Seggregation of Classes</span>
+              </li>
+              <li role="menuitem">
+                <a class="dropdown-link" href="#branding">Pre Primary Classes</a>
+              </li>
+              <li role="menuitem">
+                <a class="dropdown-link" href="#illustrations">Primary Classes</a>
+              </li>
+              <li role="menuitem">
+                <a class="dropdown-link" href="#branding">Middle Classes</a>
+              </li>
+              <li role="menuitem"></li>
+              <a class="dropdown-link" href="#branding">Secondary Classes</a>
+        </li>
+    
+    
+        <ul role="menu">
+          <li>
+            <span class="dropdown-link-title">Calender</span>
+          </li>
+          <li role="menuitem">
+            <a class="dropdown-link" href="#mac-windows">Academic Planner</a>
+          </li>
+        </ul>
+        </div>
+        </li>
+    
+        <li>
+          <button class="nav-link dropdown-btn" data-dropdown="dropdown6" aria-haspopup="true" aria-expanded="false"
+            aria-label="discover">
+            Achievements
+            <i class="bx bx-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div id="dropdown6" class="dropdown">
+            <ul role="menu">
+              <li>
+                <span class="dropdown-link-title">Awards</span>
+              </li>
+              <li role="menuitem">
+                <a class="dropdown-link" href="#branding">Bagged Awards</a>
+              </li>
+              <ul role="menu">
+                <li>
+                  <span class="dropdown-link-title">Certificates</span>
+                </li>
+                <li role="menuitem">
+                  <a class="dropdown-link" href="#mac-windows">Deserving Certifications</a>
+                </li>
+              </ul>
+          </div>
+        </li>
+    
+        <li>
+          <button class="nav-link dropdown-btn" data-dropdown="dropdown7" aria-haspopup="true" aria-expanded="false"
+            aria-label="discover">
+            Gallery
+            <i class="bx bx-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div id="dropdown7" class="dropdown">
+            <ul role="menu">
+              <li>
+                <span class="dropdown-link-title">Mesmerizing Moments</span>
+              </li>
+              <li role="menuitem">
+                <a class="dropdown-link" href="imagegallery.html">Gallery At Glance</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a class="nav-link" href="/">Mandatory Public Disclosure</a></li>
+        <li><a class="nav-link" href="career.html">Careers</a></li>
+        <li><a class="nav-link" href="/">Contact Us</a></li>
+        </ul>
+        </nav>
+        </div>
+        <button id="hamburger" aria-label="hamburger" aria-haspopup="true" aria-expanded="false">
+          <i class="bx bx-menu" aria-hidden="true"></i>
+        </button>
+        </div>
+        </div>
+      </header>
+      
+    <!-- The image gallery code goes here -->
+   
+
+    <div class="banner">
+        <!-- <h2>Image Gallery</h2> -->
+        <p>Home / Image Gallery</p>
+    </div>
+
+    <div class="content">
+        <h2>
+            Image Gallery
+        </h2>
+    </div>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="#popup1">
+                    <img alt="Image 1" height="200" src="images/academics1.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        Library day 2023-24
+                    </h3>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup2">
+                    <img alt="Image 2" height="200" src="images/academics2.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        Teaching technique 2024-25
+                    </h3>
+                    <p>
+                        one to one teaching ...
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup3">
+                    <img alt="Image 3" height="200" src="images/paintings1.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        2023-24
+                    </h3>
+                    <p>
+                        Pre primary Annual Day...
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup4">
+                    <img alt="Image 4" height="200" src="images/event2.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        School Parent-Teacher meeting!
+                    </h3>
+                    <p>
+                        Last week, our vibrant...
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup5">
+                    <img alt="Image 5" height="200" src="images/dance1.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        Independece day celebration!
+                    </h3>
+                    <p>
+                        our pride...
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup6">
+                    <img alt="Image 6" height="200" src="images/dance2.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        Cultural Day!
+                    </h3>
+                    <p>
+                        Last week, our vibrant...
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup7">
+                    <img alt="Image 7" height="200" src="images/sports1.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        Sports Day!
+                    </h3>
+                    <p>
+                        Last week, our vibrant...
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup8">
+                    <img alt="Image 8" height="200" src="images/sports2.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        School Picnic Extravaganza!
+                    </h3>
+                    <p>
+                        Last week, our vibrant...
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup9">
+                    <img alt="Image 9" height="200" src="images/exhibition2.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        Inaugration!
+                    </h3>
+                    <p>
+                        Last week, our vibrant...
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup10">
+                    <img alt="Image 10" height="200" src="images/exhibition1.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        School Exhibitions!
+                    </h3>
+                    <p>
+                        Last week, our vibrant...
+                    </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#popup11">
+                    <img alt="Image 11" height="200" src="images/event1.jpg" width="300" />
+                </a>
+                <div class="description">
+                    <h3>
+                        School Function!
+                    </h3>
+                    <p>
+                        Last week, our vibrant...
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/academics1.jpg" alt="Image 1">
+                <a href="#popup2" class="next">&#10095;</a>
+                <a href="#popup11" class="prev">&#10094;</a>
+            </div>
+        </div>
+
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/academics2.jpg" alt="Image 2">
+                <a href="#popup3" class="next">&#10095;</a>
+                <a href="#popup1" class="prev">&#10094;</a>
+            </div>
+        </div>
+
+        <div id="popup3" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/paintings1.jpg" alt="Image 3">
+                <a href="#popup4" class="next">&#10095;</a>
+                <a href="#popup2" class="prev">&#10094;</a>
+            </div>
+        </div>
+
+        <div id="popup4" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/event2.jpg" alt="Image 4">
+                <a href="#popup5" class="next">&#10095;</a>
+                <a href="#popup3" class="prev">&#10094;</a>
+            </div>
+        </div>
+
+        <div id="popup5" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/dance1.jpg" alt="Image 5">
+                <a href="#popup6" class="next">&#10095;</a>
+                <a href="#popup4" class="prev">&#10094;</a>
+            </div>
+        </div>
+
+        <div id="popup6" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/dance2.jpg" alt="Image 6">
+                <a href="#popup7" class="next">&#10095;</a>
+                <a href="#popup5" class="prev">&#10094;</a>
+            </div>
+        </div>
+
+        <div id="popup7" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/sports1.jpg" alt="Image 7">
+                <a href="#popup8" class="next">&#10095;</a>
+                <a href="#popup6" class="prev">&#10094;</a>
+            </div>
+        </div>
+
+        <div id="popup8" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/sports2.jpg" alt="Image 8">
+                <a href="#popup9" class="next">&#10095;</a>
+                <a href="#popup7" class="prev">&#10094;</a>
+            </div>
+        </div>
+
+        <div id="popup9" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/exhibition1.jpg" alt="Image 9">
+                <a href="#popup10" class="next">&#10095;</a>
+                <a href="#popup8" class="prev">&#10094;</a>
+            </div>
+        </div>
+        <div id="popup10" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/exhibition2.jpg" alt="Image 10">
+                <a href="#popup11" class="next">&#10095;</a>
+                <a href="#popup9" class="prev">&#10094;</a>
+            </div>
+        </div>
+
+        <div id="popup11" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <img src="images/event1.jpg" alt="Image 11">
+                <a href="#popup1" class="next">&#10095;</a>
+                <a href="#popup10" class="prev">&#10094;</a>
+            </div>
+        </div>
+    </main>
+    <section class="contact-section">
+        <div class="contact-card">
+            <h1>Sarhad CBSE School Pune</h1>
+            <p><strong>Address:</strong> Survey no. 9/2, Yavalewadi, Kondawa, Pune</p>
+            <p><strong>School No.:</strong> +91-9370867560</p>
+            <p><strong>Account Department:</strong> +91-9595922940</p>
+            <p><strong>Transport Desk:</strong> +91-9699116438</p>
+            <p><strong>Email:</strong> <a href="mailto:info@sarhad.in">info@sarhad.in</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sarhad School Pune. All Rights Reserved.</p>
+        <p>Powered by Edunext Technologies</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
